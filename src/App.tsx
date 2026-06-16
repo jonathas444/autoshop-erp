@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
+import Clientes from './modules/clientes/Clientes'
 
 function App() {
   return (
@@ -51,7 +52,7 @@ function App() {
             <Route path="/pdv" element={<h1 className="text-2xl font-semibold text-gray-800">Frente de caixa</h1>} />
             <Route path="/ordens-servico" element={<h1 className="text-2xl font-semibold text-gray-800">Ordens de serviço</h1>} />
             <Route path="/estoque" element={<h1 className="text-2xl font-semibold text-gray-800">Estoque</h1>} />
-            <Route path="/clientes" element={<h1 className="text-2xl font-semibold text-gray-800">Clientes</h1>} />
+            <Route path="/clientes" element={<Clientes />} />
           </Routes>
         </main>
 
