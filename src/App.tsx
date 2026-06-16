@@ -1,3 +1,4 @@
+import OrdensServico from './modules/ordens-servico/OrdensServico'
 import Estoque from './modules/estoque/Estoque'
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import Clientes from './modules/clientes/Clientes'
@@ -51,7 +52,7 @@ function App() {
           <Routes>
             <Route path="/" element={<h1 className="text-2xl font-semibold text-gray-800">Dashboard</h1>} />
             <Route path="/pdv" element={<h1 className="text-2xl font-semibold text-gray-800">Frente de caixa</h1>} />
-            <Route path="/ordens-servico" element={<h1 className="text-2xl font-semibold text-gray-800">Ordens de serviço</h1>} />
+            <Route path="/ordens-servico" element={<OrdensServico />} />
             <Route path="/estoque" element={<Estoque/>} />
             <Route path="/clientes" element={<Clientes />} />
           </Routes>
