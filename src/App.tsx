@@ -1,3 +1,4 @@
+import Dashboard from './pages/Dashboard'
 import PDV from './modules/pdv/PDV'
 import OrdensServico from './modules/ordens-servico/OrdensServico'
 import Estoque from './modules/estoque/Estoque'
@@ -51,7 +52,7 @@ function App() {
         {/* Conteúdo principal */}
         <main className="flex-1 overflow-y-auto p-6">
           <Routes>
-            <Route path="/" element={<h1 className="text-2xl font-semibold text-gray-800">Dashboard</h1>} />
+            <Route path="/" element={<Dashboard />} />
           <Route path="/pdv" element={<PDV />} />
             <Route path="/ordens-servico" element={<OrdensServico />} />
             <Route path="/estoque" element={<Estoque/>} />
